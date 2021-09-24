@@ -17,6 +17,11 @@
 \usepackage[binary-units=true]{siunitx}
 \DeclareSIUnit\px{px}
 
+\usepackage{acro}
+\acsetup{first-style=short}
+\input{Abbrev.tex}
+\input{Nomen.tex}
+
 \setlength{\cftbeforechapskip}{3pt}
 
 \sisetup{%
@@ -86,7 +91,9 @@
 \include{Sources/Titel}
 
 \begin{versionhistory}
-  \vhEntry{0.1}{08.09.2021}{Luca}{Document aangemaakt}
+    \vhEntry{0.1}{08.09.2021}{Luca}{Document aangemaakt}
+    %\vhEntry{0.2}{29.10.2021}{Luca}{Eerste opzet}
+    %\vhEntry{0.2}{29.10.2021}{Luca}{Eerste opzet}
 \end{versionhistory}
 
 \include{Sources/Voorwoord}
@@ -102,6 +109,9 @@
 \newpage
 \listoffigures
 \addcontentsline{toc}{chapter}{Lijst van figuren}
+
+\printacronyms[include=abbrev,name=Lijst van afkortingen]
+\printacronyms[include=nomencl,name=Lijst van begrippen]
 
 \include{Sources/Inleiding}
 
@@ -124,8 +134,8 @@
 % items in the bookmark structure of your PDF reader.
 \bookmarksetup{startatroot}
 
-% \bibliographystyle{IEEEtran}
-% \bibliography{IEEEabrv,bronnen}
+\bibliographystyle{IEEEtran}
+\bibliography{bronnen}
 
 \begin{appendices}
 \appendixpage

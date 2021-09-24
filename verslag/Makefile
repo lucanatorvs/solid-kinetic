@@ -1,7 +1,10 @@
 verslag: main.tex
 	pdflatex main
+	bibtex main
+	pdflatex main
 	pdflatex main
 	mv main.pdf verslag.pdf
+	-rm -f *.acr
 	-rm -f *.acn
 	-rm -f *.aux
 	-rm -f *.bbl
