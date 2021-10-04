@@ -17,4 +17,8 @@ verslag: main.tex
 	-rm -f *.log
 	-rm -f *.toc
 	-rm -f *.ver
+	-rm -f *.ilg
+	-rm -f *.ind
+	-rm -f *.fls
+	-rm -f *.fdb_latexmk
 	-rm -f Sources/*.aux
