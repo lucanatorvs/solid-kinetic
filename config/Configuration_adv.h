@@ -109,7 +109,7 @@
 
 #if TEMP_SENSOR_CHAMBER == 1000
   #define CHAMBER_PULLUP_RESISTOR_OHMS 4700    // Pullup resistor
-  #define CHAMBER_RESISTANCE_25C_OHMS  10000  // Resistance at 25C
+  #define CHAMBER_RESISTANCE_25C_OHMS  100000  // Resistance at 25C
   #define CHAMBER_BETA                 3950    // Beta value
 #endif
 
@@ -315,14 +315,14 @@
  * Thermal Protection parameters for the heated chamber.
  */
 #if ENABLED(THERMAL_PROTECTION_CHAMBER)
-  #define THERMAL_PROTECTION_CHAMBER_PERIOD    20 // Seconds
-  #define THERMAL_PROTECTION_CHAMBER_HYSTERESIS 2 // Degrees Celsius
+  #define THERMAL_PROTECTION_CHAMBER_PERIOD    240 // Seconds
+  #define THERMAL_PROTECTION_CHAMBER_HYSTERESIS 1 // Degrees Celsius
 
   /**
    * Heated chamber watch settings (M141/M191).
    */
-  #define WATCH_CHAMBER_TEMP_PERIOD            60 // Seconds
-  #define WATCH_CHAMBER_TEMP_INCREASE           2 // Degrees Celsius
+  #define WATCH_CHAMBER_TEMP_PERIOD            240 // Seconds
+  #define WATCH_CHAMBER_TEMP_INCREASE           1 // Degrees Celsius
 #endif
 
 /**
