@@ -3,11 +3,12 @@
 This was tested with version 2.3.3 of PrusaSlicer.
 
 The .ini files should go into there respective folders in the PrusaSlicer data
-folder
+folder (see below for path depending on os)
 
-## Slic3r PE 1.38.4 and later
 
-*   Windows: "C:\Users\your_user_name\AppData\Roaming\Slic3rPE" or "C:\Documents
-    and Settings\your_user_name\Application Data\Slic3rPE"
-*   Mac: ~/Library/Application\ Support/Slic3rPE/
-*   Unix / Linux: "~/.Slic3rPE/"
+
+## The location of the prusa slicer settings
+
+* Windows C:Users/username/AppData/Roaming/PrusaSlicer
+* Mac ~/Library/Application Support/PrusaSlicer
+* Linux ~/.PrusaSlicer
