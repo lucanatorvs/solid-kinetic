@@ -1,4 +1,4 @@
-# Ender-5 met BigTreeTech SKR 2
+# Ender-5 with BigTreeTech SKR 2
 
 ## Build with "Auto Build Marlin"
 
