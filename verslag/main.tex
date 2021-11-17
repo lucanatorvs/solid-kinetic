@@ -99,7 +99,7 @@
 \end{versionhistory}
 
 \include{Sources/Voorwoord}
-\include{Sources/Samenvatting}
+% \include{Sources/Samenvatting}
 %\begingroup
 %    \let\clearpage\relax
 %    \glsaddall
@@ -128,10 +128,10 @@
 \include{Sources/Ontwerp_van_de_oplossing_en_de_benodigde_onderdelen}
 \include{Sources/Assemblage}
 % \include{Sources/Ondervonden_problemen}
-\include{Sources/Eindresultaat}
+% \include{Sources/Eindresultaat}
 \include{Sources/Toetsing_eindresultaat_aan_de_hand_van_de_eisen}
 \include{Sources/Conclusie_en_aanbevelingen}
-\include{Sources/Evaluatie}
+% \include{Sources/Evaluatie}
 
 % This ensures that the subsequent sections are being included as root
 % items in the bookmark structure of your PDF reader.
@@ -144,10 +144,6 @@
 \appendixpage
 \noappendicestocpagenum
 \addappheadtotoc
-%
-% interviesie pdf
-% korte beschrijving bedrijfsorganisatie
-% verantwoording van de behaalde competenties
 \chapter{Intervisie}
 \includepdf[pages=-,fitpaper,rotateoversize]{Appendices/Intervisie/Intervisie.pdf}
 \chapter{Student over docentbezoek}
@@ -156,12 +152,13 @@
 \includepdf[pages=-,fitpaper,rotateoversize]{Appendices/Bedrijf_over_student.pdf}
 \chapter{Student over bedrijf}
 \includepdf[pages=-,fitpaper,rotateoversize]{Appendices/student_over_bedrijf/student_over_bedrijf.pdf}
-
-% 
-% \chapter{Elektrisch schema}
-% \includepdf[pages=-,fitpaper,rotateoversize]{Appendices/student_over_docentbezoek.pdf}
-% \chapter{Ontwerp PCB}
-% \includepdf[pages=-,fitpaper,rotateoversize]{Appendices/pcb_v2.pdf}
+\chapter{Verantwoording van de behaalde competenties}
+\includepdf[pages=-,fitpaper,rotateoversize]{Appendices/Verantwoording_behaalde_competenties/competenties.pdf}
+\chapter{korte beschrijving van de bedrijfsorganisatie}
+\includepdf[pages=-,fitpaper,rotateoversize]{Appendices/Bedrijfsorganisatie/organisatie.pdf}
+\chapter{overdracht document}
+\label{overdracht}
+\includepdf[pages=-,fitpaper,rotateoversize]{Appendices/overdracht.pdf}
 \end{appendices}
 
 \backmatter
